@@ -350,10 +350,10 @@ export const rawData = [
 ];
 
 export const parseParkData = (): ParkItem[] => {
-  const update = rawData.find((item) => "surfaceUpdate" in item);
-  if (!update || !("surfaceUpdate" in update)) return [];
+  const update = rawData.find((item): item is { surfaceUpdate: any } => "surfaceUpdate" in item);
+  if (!update) return [];
 
-  const components = update.surfaceUpdate.components;
+  const components = update.surfaceUpdate.components as any[];
   const parks: ParkItem[] = [];
 
   // Find all components that are Cards

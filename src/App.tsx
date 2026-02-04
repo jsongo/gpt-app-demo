@@ -6,7 +6,7 @@ function App() {
   const parks = parseParkData();
 
   return (
-    <AppsSDKUIProvider>
+    <AppsSDKUIProvider linkComponent="a">
       <div className="min-h-screen bg-canvas selection:bg-primary selection:text-inverse">
         {/* Header */}
         <header className="px-6 pt-12 pb-4 max-w-screen-xl mx-auto">
