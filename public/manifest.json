@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "深圳公园探索",
+  "name_for_model": "park_explorer",
+  "description_for_human": "发现深圳最美的公园，查看精美卡片展示、特色标签及漫步建议。",
+  "description_for_model": "当用户询问关于深圳公园、周末去处或自然景观时，调用此工具获取公园列表。它返回包含名称、描述、特色标签和图片链接的精美卡片数据。",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "/openapi.json"
+  },
+  "logo_url": "https://cdn.lyb.pub/upic/1770038132_4BMIeB.jpeg",
+  "contact_email": "jsongo@example.com",
+  "legal_info_url": "https://example.com/legal"
+}

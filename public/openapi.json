@@ -1,0 +1,48 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "深圳公园探索 API",
+    "description": "提供深圳热门公园信息的 API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/parks": {
+      "get": {
+        "operationId": "getParks",
+        "summary": "获取推荐公园列表",
+        "responses": {
+          "200": {
+            "description": "成功返回公园数据",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Park"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Park": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "imageUrl": { "type": "string" },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

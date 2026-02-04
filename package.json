@@ -1,0 +1,32 @@
+{
+  "name": "gpt-app-demo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@openai/apps-sdk-ui": "^0.2.1",
+    "lucide-react": "^0.563.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-react-swc": "^4.2.3",
+    "jsdom": "^28.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21",
+    "vitest": "^4.0.18"
+  }
+}
